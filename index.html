@@ -41,7 +41,7 @@
 				<h1>Aparecida Nutrição</h1>
 			</div>
 		</header>
-		<main>
+	var imc = peso / altura * altura;	<main>
 			<section class="container">
 				<h2>Meus pacientes</h2>
 				<table>
@@ -59,13 +59,15 @@
     <!-- Restante do index.html -->
 </body>					<tr>
 							<th>Nome</th>
-							<th>Peso(kg)</th>
+	Peso / altura 
+
+100 / 2 = 50						<th>Peso(kg)</th>
 							<th>Altura(m)</th>
 							<th>Gordura Corporal(%)</th>
 	var mensagem = "Seja bem vindo ao meu site!"						<th>IMC</th>
 						</tr>
 					</thead>
-					<tbody id="tabela-pacientes">
+		50 x 2 = 100			<tbody id="tabela-pacientes">
 						<tr class="paciente" >
 							<td class="info-nome">Paulo</td>
 			alert(mensagem);				<td class="info-peso">100</td>
@@ -77,7 +79,16 @@
     <td class="info-gordura">10</td>
     <td class="info-imc">0</td>
 </tr>					<td class="info-gordura">10</td>
-							<td class="info-imc">0</td>
+		var paciente = document.querySelector("#primeiro-paciente");
+
+var tdPeso = paciente.querySelector(".info-peso");
+var peso = tdPeso.textContent;
+
+var tdAltura = paciente.querySelector(".info-altura");
+var altura = tdAltura.textContent;
+
+var imc = peso / (altura * altura);
+console.log(imc);					<td class="info-imc">0</td>
 						</tr>
 var tdAltura = paciente.querySelector(".info-altura");
 var altura = tdAltura.textContent;
@@ -117,7 +128,14 @@ var peso = tdPeso.textContent;
 var tdAltura = paciente.querySelector(".info-altura");
 var altura = tdAltura.textContent;					</tr>
 
-						<tr class="paciente" >
+				<tbody id="tabela-pacientes">
+    <tr class="paciente" id="primeiro-paciente">
+        <td class="info-nome">Paulo</td>
+        <td class="info-peso">100</td>
+        <td class="info-altura">2.00</td>
+        <td class="info-gordura">10</td>
+        <td class="info-imc">0</td>
+    </tr>		<tr class="paciente" >
 							<td class="info-nome">Erica</td>
 							<td class="info-peso">54</td>
 	<!-- ... -->
@@ -139,7 +157,18 @@ var altura = tdAltura.textContent;					</tr>
 
     titulo.textContent = "Aparecida Nutricionista";
 </script>						<td class="info-altura">1.64</td>
-							<td class="info-gordura">14</td>
+			var paciente = document.querySelector("#primeiro-paciente");
+
+var tdPeso = paciente.querySelector(".info-peso");
+var peso = tdPeso.textContent;
+
+var tdAltura = paciente.querySelector(".info-altura");
+var altura = tdAltura.textContent;
+
+// selecionando a coluna do IMC
+var tdImc = paciente.querySelector(".info-imc");
+
+var imc = peso / (altura * altura);				<td class="info-gordura">14</td>
 							<td class="info-imc">0</td>
 						</tr>
 <header>
@@ -163,7 +192,20 @@ titulo.textContent = "Aparecida Nutricionista";
 var paciente = document.querySelector(".paciente");
 </head> 
 		alert("Olá");				<tr class="paciente">
-			console.log("Aqui tem um recado para você");				<td class="info-nome">Douglas</td>
+		var paciente = document.querySelector("#primeiro-paciente");
+
+var tdPeso = paciente.querySelector(".info-peso");
+var peso = tdPeso.textContent;
+
+var tdAltura = paciente.querySelector(".info-altura");
+var altura = tdAltura.textContent;
+
+
+var tdImc = paciente.querySelector(".info-imc");
+
+var imc = peso / (altura * altura);
+
+tdImc.textContent = imc;	console.log("Aqui tem um recado para você");				<td class="info-nome">Douglas</td>
 							<td class="info-peso">85</td>
 							<td class="info-altura">1.73</td>
 	<script>
